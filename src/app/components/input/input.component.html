@@ -1,0 +1,12 @@
+<div class="input-box">
+  <div class="label">
+    <div class="label__text">{{ label }}</div>
+    <div class="label__msg label__msg-error">{{ msg }}</div>
+  </div>
+  <input
+    type="{{ type }}"
+    placeholder="{{ placeholder }}"
+    [(ngModel)]="input_value"
+    (blur)="validateInput()"
+  />
+</div>
